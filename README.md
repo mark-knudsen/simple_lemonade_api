@@ -12,5 +12,5 @@ Open [http://localhost:3001/api/lemonades/{id}] to view a specific lemonades in 
 
 ## About the assets
 
-This project has the asset nedded for my lemonade_webshop.
+This project has the asset needed in my lemonade_webshop.
 It contains the images and the webpage gets the images from here.
