@@ -2,7 +2,7 @@
 
 ### `npm install`
 
-Installs the neccesary dependencies.
+Installs the necessary dependencies.
 
 ### `node server.js`
 
