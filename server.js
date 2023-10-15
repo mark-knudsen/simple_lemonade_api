@@ -24,7 +24,7 @@ const lemonades = [
     id: 2,
     name: 'Orange lemonade',
     description: '',
-    quantities: 54,
+    quantities: 4,
     price: 9.99,
     imageUrl: '/assets/lemonades/lem-2-orange-smile.png'
   },
@@ -40,7 +40,7 @@ const lemonades = [
     id: 4,
     name: 'Apple lemonade',
     description: '',
-    quantities: 74,
+    quantities: 9,
     price: 8.99,
     imageUrl: '/assets/lemonades/lem-4-apple-smile.png'
   },
@@ -72,7 +72,7 @@ const lemonades = [
     id: 8,
     name: 'Banana lemonade',
     description: '',
-    quantities: 20,
+    quantities: 7,
     price: 8.99,
     imageUrl: '/assets/lemonades/lem-7-banana-smile.png'
   },
@@ -88,9 +88,8 @@ const lemonades = [
 
 
 
-// Enable All CORS Requests // old cors
+// Enable All CORS Requests
 app.use(cors());
-
 
 // new cors
 const corsOptions = {
@@ -101,7 +100,7 @@ const corsOptions = {
   
 };
 
-app.use(cors(corsOptions));
+//app.use(cors(corsOptions));
 
 
 
@@ -112,7 +111,7 @@ app.use((req, res, next) => {
 
 
 
-// endpoint to get the full list of lemonades!
+// Endpoint to get the full list of lemonades!
 app.get('/api/lemonades', (req, res) => {
   const lemonadesWithImageUrls = lemonades.map((lemonade) => {
     return {
